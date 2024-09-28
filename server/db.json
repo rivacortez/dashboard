@@ -1,0 +1,202 @@
+{
+  "roles": [],
+  "companies": [],
+  "memberships": [],
+  "users": [
+    {
+      "id": 1,
+      "username": "empresa1",
+      "password": "123456",
+      "role": "empresa"
+    },
+    {
+      "id": 3,
+      "username": "empresa2",
+      "password": "123",
+      "role": "empresa"
+    },
+    {
+      "id": 2,
+      "username": "empresario1",
+      "password": "123456",
+      "role": "empresario"
+    }
+  ],
+  "entrepreneurs": [],
+  "merchandise": [
+    {
+      "id": "1",
+      "direction": "Av. Perú",
+      "type": "Frágil",
+      "travel_price": "S/ 1500",
+      "product": "Vasos de cristal",
+      "amount": "200 unidades",
+      "date": "2024-09-27",
+      "special_conditions": "Transportar con cuidado"
+    },
+    {
+      "id": "2",
+      "direction": "Av. Lima",
+      "type": "Perecible",
+      "travel_price": "S/ 1800",
+      "product": "Pescado fresco",
+      "amount": "500 kg",
+      "date": "2024-09-25",
+      "special_conditions": "Mantener por debajo de 5°C"
+    },
+    {
+      "id": "3",
+      "direction": "Av. Primavera",
+      "type": "Pesado",
+      "travel_price": "S/ 2500",
+      "product": "Barras de acero",
+      "amount": "1000 unidades",
+      "date": "2024-09-28",
+      "special_conditions": "Sin condiciones especiales"
+    }
+  ],
+  "drivers": [
+    {
+      "id": 1,
+      "name": "Juan Perez",
+      "dni": "12345678",
+      "phone": "912345678",
+      "license": "654321",
+      "url_image": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Maria assdas",
+      "dni": "2323321",
+      "phone": "987654321",
+      "license": "123456",
+      "url_image": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "asasd",
+      "dni": "asdas",
+      "phone": "dasda",
+      "license": "dads"
+    }
+  ],
+  "ordersOnTrip": [],
+  "vehicles": [
+    {
+      "id": 1,
+      "model": "Volvo FH",
+      "plate": "ABC-123",
+      "max_load": "18000",
+      "volume": "40",
+      "url_image": "https://www.novologistica.com/wp-content/uploads/2020/03/volvofh.jpg"
+    },
+    {
+      "id": 2,
+      "model": "Scania R500",
+      "plate": "DEF-456",
+      "max_load": "20000",
+      "volume": "45",
+      "url_image": "https://www.degrootetrucks.com/sites/degroote/files/uploads/b3/24074869-3.JPG"
+    },
+    {
+      "id": 3,
+      "model": "Mercedes-Benz Actros",
+      "plate": "GHI-789",
+      "max_load": "22000",
+      "volume": "50",
+      "url_image": "https://img.linemedia.com/img/s/box-truck-Mercedes-Benz-Actros-2542---1708193832047511762_big--24021720075948461400.jpg"
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "name": "test",
+      "type": "test type",
+      "weight": 2,
+      "unload_location": "Av. test",
+      "unload_date": "2024-01-01",
+      "expense_id": 1,
+      "alert_id": 1,
+      "ongoing_trip_id": 1,
+      "vehicle_id": 1,
+      "driver_id": 1,
+      "entrepreneur_id": 1,
+      "dimensionx": 1,
+      "dimensiony": 1,
+      "dimensionz": 1
+    },
+    {
+      "id": 2,
+      "name": "test2",
+      "type": "test type 2",
+      "weight": 2,
+      "unload_location": "Av. test2",
+      "unload_date": "2024-01-02",
+      "expense_id": 1,
+      "alert_id": 1,
+      "ongoing_trip_id": 1,
+      "vehicle_id": 1,
+      "driver_id": 1,
+      "entrepreneur_id": 1,
+      "dimensionx": 1,
+      "dimensiony": 1,
+      "dimensionz": 1
+    },
+    {
+      "id": 3,
+      "name": "1",
+      "type": "test type",
+      "weight": 2,
+      "unload_location": "Av. test 3",
+      "unload_date": "",
+      "expense_id": 0,
+      "alert_id": 0,
+      "ongoing_trip_id": 0,
+      "vehicle_id": "7",
+      "driver_id": "6",
+      "entrepreneur_id": 0,
+      "dimensionx": "3",
+      "dimensiony": "4",
+      "dimensionz": "5"
+    }
+  ],
+  "expenses": [],
+  "alerts": [],
+  "ongoing_trips": [],
+  "evidences": [],
+  "payment_cards": [],
+  "data_statistics": [
+    {
+      "data": {
+        "chart1": {
+          "labels": [
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto"
+          ],
+          "orders": [
+            200,
+            179,
+            165,
+            134
+          ]
+        },
+        "chart2": {
+          "labels": [
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril"
+          ],
+          "profits": [
+            3000,
+            2500,
+            2000,
+            1500
+          ]
+        }
+      }
+    }
+  ]
+}

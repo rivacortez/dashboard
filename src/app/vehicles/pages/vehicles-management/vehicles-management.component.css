@@ -1,0 +1,32 @@
+.vehicles-management-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.vehicles-form-card,
+.vehicles-table-card {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.vehicles-mat-card-tittle{
+  align-content: center;
+  left: auto;
+}
+
+@media (max-width: 768px) {
+  .vehicles-form-card,
+  .vehicles-table-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+.add-trip-card{
+  background-color: black !important;
+  color: #FFFFFF;
+}
+imput{
+  border-color: yellow;
+  border-width: 5px;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: yellow;
+  border-width: 5px;
+
+}

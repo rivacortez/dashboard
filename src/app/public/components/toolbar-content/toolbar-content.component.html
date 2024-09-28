@@ -1,0 +1,27 @@
+<mat-toolbar class="toolbar" color="primary">
+
+  <span class="spacer"></span>
+
+
+  <div class="toolbar-content">
+    <img src="./assets/images/cargosafe-logo.png" class="issuer-img" alt="CargoSafe Logo" />
+    <p class="header-title" aria-label="title">CargoSafe</p>
+  </div>
+
+
+  <span class="spacer"></span>
+
+
+  <nav class="toolbar-nav">
+    <button mat-button routerLink="/ordersOnTrip">Registro</button>
+    <button mat-button routerLink="/drivers/management">Conductores</button>
+    <button mat-button routerLink="/vehicles/management">Vehículos</button>
+
+
+  </nav>
+
+
+  <span class="button-i18n" aria-description="switcher button for i18n">
+    <app-language-switcher></app-language-switcher>
+  </span>
+</mat-toolbar>

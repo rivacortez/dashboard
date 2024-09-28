@@ -1,0 +1,26 @@
+<!-- Create and Edit Course -->
+<h2> {{ editMode ? 'Edit Driver' : 'Driver Management' }}</h2>
+<div class="form-section">
+  <form (submit)="onSubmit()" #driverForm="ngForm" class="form-row">
+    <mat-form-field id="title-form-field">
+      <input matInput placeholder="Name" name="name" required [(ngModel)]="driver.name">
+    </mat-form-field>
+    <mat-form-field id="dni-form-field">
+      <input matInput placeholder="dni" name="dni" required [(ngModel)]="driver.dni">
+    </mat-form-field>
+    <mat-form-field id="phone-form-field">
+      <input matInput placeholder="phone" name="phone" required [(ngModel)]="driver.phone">
+    </mat-form-field>
+    <mat-form-field id="license-form-field">
+      <input matInput placeholder="license" name="license" required [(ngModel)]="driver.license">
+    </mat-form-field>
+
+    <ng-container *ngIf="editMode; else elseTemplate">
+      <button mat-raised-button color="primary">Update</button>
+      <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <button mat-raised-button color="primary">Add</button>
+    </ng-template>
+  </form>
+</div>

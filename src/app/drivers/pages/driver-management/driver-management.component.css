@@ -1,0 +1,32 @@
+
+.table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+mat-card {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .table-wrapper {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .mat-header-cell, .mat-cell {
+    padding: 16px;
+  }
+
+  img {
+    width: 150px;
+  }
+}

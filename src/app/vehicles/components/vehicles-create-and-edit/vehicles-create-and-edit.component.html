@@ -1,0 +1,29 @@
+<!-- Create and Edit Vehicle -->
+<h2> {{ editMode ? 'Edit Vehicle' : 'Vehicle Management' }}</h2>
+<div class="form-section">
+  <form (submit)="onSubmit()" #vehicleForm="ngForm" class="form-row">
+    <mat-form-field id="model-form-field">
+      <input matInput placeholder="Model" name="model" required [(ngModel)]="vehicle.model">
+    </mat-form-field>
+    <mat-form-field id="plate-form-field">
+      <input matInput placeholder="Plate" name="plate" required [(ngModel)]="vehicle.plate">
+    </mat-form-field>
+    <mat-form-field id="max-load-form-field">
+      <input matInput placeholder="Max Load" name="max_load" required [(ngModel)]="vehicle.max_load">
+    </mat-form-field>
+    <mat-form-field id="volume-form-field">
+      <input matInput placeholder="Volume" name="volume" required [(ngModel)]="vehicle.volume">
+    </mat-form-field>
+    <mat-form-field id="url-image-form-field">
+      <input matInput placeholder="Image URL" name="url_image" [(ngModel)]="vehicle.url_image">
+    </mat-form-field>
+
+    <ng-container *ngIf="editMode; else elseTemplate">
+      <button mat-raised-button color="primary">Update</button>
+      <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <button mat-raised-button color="primary">Add</button>
+    </ng-template>
+  </form>
+</div>

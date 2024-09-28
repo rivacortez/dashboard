@@ -1,0 +1,47 @@
+<div class="container">
+
+  <!-- Órdenes en curso Section -->
+  <section class="orders-section">
+    <div class="orders-header">
+      <h2>Órdenes en curso</h2>
+      <a class="view-more" href="#">VER MÁS ></a>
+    </div>
+    <div class="order-card">
+      <div class="order-info">
+        <p><strong>En Tránsito</strong></p>
+        <p>Hora: 08:10 AM</p>
+        <p>Estado: El envío ha salido de la planta y está en tránsito.</p>
+      </div>
+      <div class="order-image">
+        <img src="./assets/images/ordenImage.jpg"  alt="Imagen de Orden">
+      </div>
+    </div>
+  </section>
+
+  <!-- Mercancía Agedada Section -->
+  <section class="merchandise-section">
+    <div class="merchandise-header">
+      <h2>Mercancía agedada</h2>
+      <a class="view-more" [routerLink]="['/ordersOnTrip']">VER MÁS </a>
+    </div>
+    <div class="merchandise-grid">
+      <div class="merch-card">
+        <img src="./assets/images/milk.jpg"  alt="Leche">
+        <p>LECHE</p>
+      </div>
+      <div class="merch-card">
+        <img src="./assets/images/yogurt.jpg"  alt="Yogurt Natural">
+        <p>YOGURT NATURAL<br>SIN CONSERVANTES</p>
+      </div>
+      <div class="merch-card">
+        <img src="./assets/images/cremaLeche.jpg"  alt="Crema de Leche">
+        <p>CREMA DE LECHE</p>
+      </div>
+      <div class="merch-card">
+        <img src="./assets/images/QUESOBRIE.png"  alt="Queso Brie">
+        <p>QUESO BRIE</p>
+      </div>
+    </div>
+  </section>
+
+</div>

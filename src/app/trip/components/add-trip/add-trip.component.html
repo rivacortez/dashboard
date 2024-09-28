@@ -1,0 +1,94 @@
+<!-- Create  Trip -->
+<div style="display: flex;flex-direction: column; align-items: center;margin-bottom: 1rem">
+  <mat-card class="add-trip-card" style="width: 70%; margin: 0 auto !important;">
+    <mat-card-header style="display: flex;flex-direction: column; align-items: center;margin-bottom: 1rem">
+      <mat-card-title style="text-align: center;color:#FFFFFF">{{ editMode ? 'Editar tu orden' : 'Registrar tu orden' }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+
+      <div class="form-section">
+        <form (submit)="onSubmit()" #tripForm="ngForm" class="form-row">
+          <div>
+            <mat-label> Ubicación</mat-label>
+          </div>
+          <div>
+            <mat-form-field id="unload-location-form-field">
+              <input matInput placeholder="Ubicación" name="location" required [(ngModel)]="trip.unload_location">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-label> Tipo de carga</mat-label>
+          </div>
+          <div>
+            <mat-form-field id="type-form-field">
+              <input matInput placeholder="Tipo de carga" name="type" required [(ngModel)]="trip.type">
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-label> Número de paquetes</mat-label>
+          </div>
+
+          <div>
+            <mat-form-field id="name-form-field">
+              <input matInput placeholder="Número de paquetes" name="name" required [(ngModel)]="trip.name">
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-label> Peso total de la orden</mat-label>
+          </div>
+
+          <div>
+            <mat-form-field id="weight-form-field">
+              <input matInput placeholder="Total weight of package" name="weight" required [(ngModel)]="trip.weight">
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-label> Dimensiones de la orden</mat-label>
+          </div>
+          <mat-form-field id="dimensionx-form-field" fxLayout="column">
+            <input matInput fxFlex="30" placeholder="x" name="dimensionx" required [(ngModel)]="trip.dimensionx">
+          </mat-form-field>
+          <mat-label> x </mat-label>
+          <mat-form-field id="dimensiony-form-field" fxLayout="column">
+            <input matInput fxFlex="30"  placeholder="y" name="dimensiony" required [(ngModel)]="trip.dimensiony">
+          </mat-form-field>
+          <mat-label> x </mat-label>
+          <mat-form-field id="dimensionz-form-field" fxLayout="column">
+            <input matInput fxFlex="30" placeholder="z" name="dimensionz" required [(ngModel)]="trip.dimensionz">
+          </mat-form-field>
+          <div>
+            <mat-label> Conductor</mat-label>
+          </div>
+
+          <div>
+            <mat-form-field id="driver_id-form-field">
+              <input matInput placeholder="Conductor" name="driver_id" required [(ngModel)]="trip.driver_id">
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-label> Vehículo</mat-label>
+          </div>
+
+          <div>
+            <mat-form-field id="vehicle_id-form-field">
+              <input matInput placeholder="Vehículo" name="vehicle_id" required [(ngModel)]="trip.vehicle_id">
+            </mat-form-field>
+          </div>
+
+          <ng-container *ngIf="editMode; else elseTemplate">
+            <button mat-raised-button color="primary">Update</button>
+            <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+          </ng-container>
+          <ng-template #elseTemplate>
+            <button mat-raised-button color="primary">Agendar</button>
+          </ng-template>
+        </form>
+      </div>
+    </mat-card-content>
+
+  </mat-card>
+</div>

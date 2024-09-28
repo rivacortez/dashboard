@@ -1,0 +1,76 @@
+/* Contenedor Principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sección de Órdenes en curso */
+.orders-section {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-more {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.order-info {
+  flex: 1;
+}
+
+.order-image img {
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+}
+
+/* Sección de Mercancía Agedada */
+.merchandise-section {
+  margin-top: 20px;
+}
+
+.merchandise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.merchandise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.merch-card {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.merch-card img {
+  border-radius: 8px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}

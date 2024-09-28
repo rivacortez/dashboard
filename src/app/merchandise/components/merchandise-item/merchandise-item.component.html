@@ -1,0 +1,15 @@
+<mat-card-title class="mat-title-medium">Mercancía Agendada</mat-card-title>
+<div class="container">
+<mat-card *ngFor="let merch of merchandises" class="merch-card">
+  <mat-card-content>
+    <p>Dirección de entrega: {{merch.direction}}</p>
+    <p>Tipo de carga: {{merch.type}}</p>
+    <p>Costo de transporte: {{merch.travel_price}}</p>
+    <p>Producto transportado: {{merch.product}}</p>
+    <p>Cantidad de carga: {{merch.amount}}</p>
+    <p>Fecha y hora de entrega: {{merch.date}}</p>
+    <p>Condiciones especiales: {{merch.special_conditions}}</p>
+    <mat-button-toggle class="ubication-button">Ver ubicación</mat-button-toggle>
+  </mat-card-content>
+</mat-card>
+</div>
